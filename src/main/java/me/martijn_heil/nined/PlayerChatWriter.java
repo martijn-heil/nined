@@ -49,7 +49,6 @@ public class PlayerChatWriter extends Writer {
 		char[] buf = new char[len];
 		System.arraycopy(chars, off, buf, 0, len);
 		String message = String.valueOf(buf);
-		plugin.getLogger().info(message);
 		server.getScheduler().scheduleSyncDelayedTask(plugin, () -> {
 			target.sendMessage(message);
 		}, 0);
