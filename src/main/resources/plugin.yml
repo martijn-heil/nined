@@ -1,0 +1,10 @@
+name: nined
+version: @version@
+author: Ninjoh
+main: me.martijn_heil.nined.Nined
+api-version: 1.18
+commands:
+  ed:
+    description: The standard text editor!
+    usage: /<command>
+    permission: nined.ed
